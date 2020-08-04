@@ -1,0 +1,480 @@
+.steps {
+    float: right;
+    padding-top: 20px;
+    margin-right: 40px;
+}
+
+.steps li {
+    position: relative;
+    float: left;
+}
+
+.steps li b {
+    background: url(http://static01.yiguo.com/cart/images/order-step.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+
+.steps li .b1 {
+    background-position: 0 0
+}
+
+.steps li .b2 {
+    background-position: -42px 0
+}
+
+.steps li .b3 {
+    background-position: -84px 0
+}
+
+.steps li i {
+    width: 165px;
+    height: 6px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    display: block;
+    float: left;
+    margin-top: 15px;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+.steps li span {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    right: -62px;
+    color: #333
+}
+
+.steps .on span {
+    color: #008842;
+}
+
+.steps .on i {
+    border-color: #008842;
+    background: #008842;
+}
+
+/* 
+.steps .on .b1 {
+    background-position: 0 -44px;
+}
+
+.steps .on .b2 {
+    background-position: -42px -44px;
+}
+
+.steps .on .b3 {
+    background-position: -84px -44px;
+} */
+
+
+
+/* 购物车 */
+.cart {
+    margin-top: 20px;
+}
+
+.cart h2,
+.order h2,
+i,
+.decrement,
+.increment {
+    background-image: url(http://static01.yiguo.com/cart/images/bg_cart.png);
+    background-repeat: no-repeat;
+}
+
+.cart h2 {
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    background-position: 0 0;
+    border-bottom: 2px solid #05984d;
+    text-indent: -9999em;
+    position: relative
+}
+
+.cart h2 .tips {
+    color: #008842;
+    position: absolute;
+    left: 465px;
+    top: 0;
+    height: 38px;
+    line-height: 38px;
+    text-indent: 0;
+}
+
+.on-shopping {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #008842;
+    text-indent: 0;
+    text-decoration: underline;
+    margin-right: 22px
+}
+
+.cart-alert,
+.order-alert {
+    border: 1px solid #e3e6e0;
+    border-top: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.order h2 {
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    background-position: 0 0;
+    border-bottom: 2px solid #70bd2c;
+    text-indent: -9999em;
+    position: relative
+}
+
+/*配送至*/
+.cart .city {
+    position: absolute;
+    left: 230px;
+    top: 4px;
+    text-indent: 0;
+}
+
+.cart .city-sz {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 7px 0;
+    cursor: pointer;
+}
+
+.cart .city-sz i {
+    display: inline-block;
+    background-position: -80px -40px;
+    width: 12px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.cart .city-tit {
+    float: left;
+}
+
+.cart .city-name2 {
+    z-index: 100;
+    position: relative;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 0 5px 5px 5px;
+    cursor: pointer;
+}
+
+.cart .city-name2 s {
+    top: 9px;
+}
+
+/* .cart .city-con {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 482px;
+    border: 2px solid #007f4d;
+    background: #fff;
+}
+
+.cart .city-con .headline {
+    padding: 0 15px;
+    line-height: 32px;
+    color: #727272;
+    background: #e0e0e0;
+}
+
+.cart .city-con .headline a {
+    float: right;
+    color: #008842;
+    font-family: simsun;
+} */
+
+.cart .current .city-name {
+    background: #008842;
+    color: #fff;
+}
+
+/* .cart .current .city-con {
+    display: block;
+} */
+
+.cart .current .city-name2 s {
+    background: url(../images/header/header-img.png) no-repeat -25px 0;
+}
+
+
+/*购物车列表*/
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+
+.cart-table th {
+    height: 40px;
+    background-color: #f1f1f1;
+    font: 12px/40px Simsun;
+    color: #262626;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.cart-table td {
+    border-top: 1px solid #ebebeb;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-table td img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ebebeb;
+    position: relative
+}
+
+.cart-t-check {
+    width: 20px;
+}
+
+.cart-table th.cart-t-check,
+.cart-table td.cart-t-check {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.cart-table th.cart-t-check {
+    width: 120px;
+}
+
+.cart-table th.cart-t-check input {
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.cart-t-img {
+    width: 80px;
+    position: relative
+}
+
+.cart-t-info a {
+    font: 14px/2.4em Simsun;
+}
+
+.cart-table td.cart-t-info {
+    text-align: left
+}
+
+.bd-title {
+    float: left;
+    height: 20px;
+    color: #fff;
+    font: 12px/20px Simsun;
+    margin-right: 15px;
+    padding: 0 6px;
+    background: #008842;
+    position: relative
+}
+
+.bd-promos {
+    float: left;
+    color: #008842;
+    font: 12px/20px Simsun;
+}
+
+.cart-t-price {
+    width: 100px;
+    color: #262626;
+    font-size: 14px;
+    line-height: 1em;
+}
+
+.cart-t-num {
+    width: 110px;
+    color: #262626;
+    font: 12px/1em Simsun;
+}
+
+.cart-t-total {
+    width: 110px;
+    color: #e93005;
+    font-size: 14px;
+    line-height: 1em;
+}
+
+.cart-t-spec {
+    width: 110px;
+    color: #262626;
+    font: 12px/1em Simsun;
+}
+
+.cart-t-opera {
+    width: 110px;
+    color: #262626;
+    font: 12px/2em Simsun;
+}
+
+.cart-t-opera .i-del {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 16px;
+    height: 18px;
+    background-position: -480px -160px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* 购物车已选商品 */
+.cart-t-img {
+    width: 80px;
+    position: relative;
+}
+
+.cart .cartimg {
+    width: 85px;
+    height: 85px;
+}
+
+.cart-t-ub {
+    width: 75px;
+    height: 85px;
+}
+
+.cart-t-num {
+    position: relative;
+}
+
+.num-inp {
+    position: absolute;
+    left: 43px;
+    top: 40px;
+    border: 1px solid #cacbcb;
+    width: 42px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    font-size: 12px;
+    font-family: verdana;
+    color: #333;
+    -webkit-appearance: none;
+}
+
+.decrement {
+    margin: 0;
+    width: 18px;
+    height: 24px;
+    background-position: 0 -40px;
+    position: absolute;
+    top: 40px;
+    left: 21px;
+}
+
+.increment {
+    margin: 0;
+    width: 18px;
+    height: 24px;
+    background-position: -20px -40px;
+    position: absolute;
+    top: 40px;
+    right: 19px;
+}
+
+/* 结算 */
+.cart-footer {
+    background-color: #f7f7f7;
+    font-size: 12px;
+    line-height: 1em;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.cart-footer label {
+    margin-left: 20px;
+    vertical-align: middle
+}
+
+.cart-footer input {
+    margin-right: 5px;
+}
+
+.cart-footer span {
+    margin-right: 20px;
+}
+
+.cart-footer em {
+    color: #ff5317;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1em;
+}
+
+.cart-footer .ub em {
+    color: #249c61;
+    font: bold 14px/1em Simsun;
+}
+
+.cart-footer a {
+    font: 12px/40px Simsun;
+    margin-left: 20px
+}
+
+.cart-footer a i {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 14px;
+    height: 16px;
+    background-position: -100px -40px;
+    margin-right: 5px;
+    vertical-align: middle
+}
+
+.cart-footer .btn {
+    font: bold 18px/1em "微软雅黑";
+    background-color: #ff5317;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-left: 0
+}
+
+.settle-fixed {
+    z-index: 100000;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd
+}
+

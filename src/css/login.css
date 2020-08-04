@@ -1,0 +1,124 @@
+.header p {
+    color: #008842;
+    font: 28px/1 Microsoft YaHei;
+    position: absolute;
+    left: 313px;
+    top: 23px;
+    white-space: nowrap;
+}
+.login {
+    width: 308px;
+    padding: 30px 20px 20px;
+    background-color: #fff;
+    border: 1px solid #e3e6e0;
+    float: right;
+    margin-top: 30px;
+    margin-right: 105px;
+}
+
+.login p {
+    margin-bottom: 20px;
+    font: 12px Arial, "SimSun";
+    color: #878787;
+    position: relative;
+    overflow: hidden;
+}
+
+.login p strong {
+    color: #262626;
+    font: 18px/1 "Microsoft YaHei";
+}
+
+.login p span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.input-phone-icon,
+.input-key-icon {
+    position: absolute;
+    left: 1px;
+    top: 1px !important;
+    width: 40px;
+    height: 38px;
+    background-image: url(https://login.yiguo.com/Content/img/bg_input.png);
+    background-repeat: no-repeat;
+}
+
+.login .input,
+.register .input,
+.forget-pwd .input {
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    height: 38px;
+    vertical-align: middle;
+    padding-left: 14px;
+    width: 290px;
+    font: 14px/38px "Microsoft YaHei";
+}
+
+.login .input {
+    padding-left: 50px;
+    width: 254px;
+    background-image: url(https://login.yiguo.com/Content/img/bg_input.png);
+    background-repeat: no-repeat;
+}
+
+.login-main .green {
+    text-decoration: underline;
+}
+
+.input-phone-icon {
+    background-position: 0 -120px;
+}
+
+.input-key-icon {
+    background-position: 0 -180px;
+}
+
+.input-key {
+    background-position: 0 -180px;
+}
+
+input[type=checkbox] {
+    margin-right: 9px;
+    height: 14px;
+    width: 14px;
+    vertical-align: -1px;
+}
+
+.gray {
+    color: #878787;
+}
+
+.btnlogin {
+    width: 306px;
+    background: #008842;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font: 18px/50px "Microsoft YaHei";
+}
+
+.threelogin i {
+    background-image: url(https://login.yiguo.com/Content/img/themes/bg_login.png);
+    display:inline-block;
+    width: 80px;
+    height: 20px;
+margin-right: 25px;
+}
+
+.qq i {
+    background-position: -60px -200px;
+}
+
+.sina i{
+    background-position: -160px -200px;
+}
+.ay i {
+    background-position: -260px -200px;
+    width: 57px;
+    margin-right: 0;
+}

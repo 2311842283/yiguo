@@ -1,0 +1,380 @@
+/* 商品列表 */
+.title .title-top {
+    width: 180px;
+    height: 38px;
+    position: relative;
+    text-align: center;
+    background: #008842;
+}
+
+.title .title-top a {
+    overflow: hidden;
+    color: #fff;
+    display: block;
+    height: 16px;
+    padding: 11px 0;
+}
+
+.title .title-top a h1 {
+    font-size: 15px;
+}
+
+/* 列表内容 */
+.header-nav .title {
+    float: left;
+}
+
+.title .title-main {
+    display: none;
+    position: absolute;
+    height: 462px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.title .title-main .item a {
+    position: relative;
+    display: block;
+    width: 165px;
+    height: 24px;
+    padding: 9px 0 9px 15px;
+    font-size: 14px;
+}
+
+.title .title-main .item i {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background: url(http://static01.yiguo.com/www/images/header/nav-icon.png);
+    background-position: -48px 0;
+}
+
+.header-nav .sort {
+    overflow: hidden;
+    float: left;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+}
+
+.header-nav .sort ul li {
+    float: left;
+    width: 115px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* <!-- 面包屑导航 --> */
+
+.crumbs {
+    margin: 10px 0;
+    margin-left: -10px;
+}
+
+.crumbs a {
+    margin: 0 10px;
+}
+
+.crumbs a.on {
+    color: #007f4d;
+}
+
+/* 小图区域 */
+.spic {
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+
+#sf {
+    width: 50px;
+    height: 50px;
+    background: orange;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    cursor: move;
+}
+
+#bf {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: absolute;
+    left: 410px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+/* 商品详情 */
+.product-info {
+    width: 680px;
+    margin-left: 520px;
+}
+
+.summary-name {
+    margin: 0 85px 20px 0;
+}
+
+.summary-name h1 {
+    font: normal 26px "Microsoft YaHei";
+}
+
+.summary-name p {
+    height: 40px;
+    margin-top: 5px;
+    color: #777;
+    font: normal 16px/20px "Microsoft YaHei";
+}
+
+.summary-price {
+    height: 70px;
+    padding: 10px 20px;
+    background: #fff;
+    position: relative;
+}
+
+.pro-price {
+    float: left;
+    height: 70px;
+    width: 423px;
+}
+
+.pro-price .tt {
+    width: 60px;
+    display: inline-block;
+}
+
+.pro-price span {
+    display: inline-block;
+}
+
+.pro-price em {
+    padding: 0 5px;
+    font-size: 18px;
+    color: #ff0000;
+    font-style: normal;
+}
+.pro-price strong {
+    color: #ff0000;
+    font-size: 22px;
+    font-weight: normal;
+}
+.pro-m2 {
+    color: #999999;
+}
+.pro-m1, .pro-m2, .pro-m3 {
+    border-top: 1px solid #e2e2e2;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.pro-tel {
+    position: absolute;
+    right: 180px;
+    top: 5px;
+}
+.pro-tel p {
+    float: left;
+    margin-top: 53px;
+    margin-right: 10px;
+}
+.pro-tel i {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url(http://static01.yiguo.com/www/images/icon-tel.png) no-repeat center;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.pro-tel strong {
+    font-weight: normal;
+    color: #11b57c;
+    margin-left: 10px;
+}
+/* 二维码 */
+.pro-tel .code {
+    float: left;
+    width: 73px;
+    height: 73px;
+    padding: 3px 4px 4px 10px;
+    background: url(http://static01.yiguo.com/www/images/bg-code.png) no-repeat;
+}
+.pro-tel .code img {
+    width: 73px;
+    height: 73px;
+}
+.pro-review {
+    float: right;
+    text-align: center;
+}
+.pro-review p {
+    line-height: 22px;
+    color: #999;
+}
+
+.pro-review b {
+    color: #e8380d;
+    font-size: 18px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.pro-review p a{
+    line-height: 22px;
+    color: #999;
+}
+/* 加入购物车 */
+.addcart{
+    margin-top: 20px;
+}
+.choose, .pro-service, .pro-amount, .pro-share, .pro-tips {
+    margin-bottom: 20px;
+}
+.addcart .left {
+    float: left;
+    width: 529px;
+    padding-right: 20px;
+    border-right: 1px solid #d9d9d9;
+}
+.choose .dt {
+    line-height: 52px;
+    float: left;
+    width: 40px;
+    padding: 0 10px;
+}
+.addcart .dd {
+    float: left;
+    width: 468px;
+}
+.choose li {
+    float: left;
+    position: relative;
+    margin: 5px 10px 5px 0;
+}
+.choose li a {
+    float: left;
+    width: auto;
+    background-color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-bottom: none;
+    text-decoration: none;
+}
+.choose li span {
+    display: block;
+    padding: 5px 12px 5px 9px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.choose li span {
+    display: block;
+    padding: 5px 12px 5px 9px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.choose li i {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: url(http://static01.yiguo.com/www/images/product.png) no-repeat 0 0;
+}
+.pro-amount .dt {
+    line-height: 43px;
+    float: left;
+    width: 40px;
+    padding: 0 10px;
+}
+
+.spinner {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 76px;
+}
+.spinner .decrease {
+    top: 21px;
+    right: 18px;
+    border-top: none;
+}
+
+.spinner button {
+    display: block;
+    width: 18px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    float: right;
+    position: relative;
+    border: 1px solid #e2e2e2;
+    background-color: white;
+    cursor: pointer;
+}
+.spinner input {
+    width: 39px;
+    height: 39px;
+    line-height: 41px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border: 1px solid #e2e2e2;
+    border-right: none;
+}
+ .add {
+    float: left;
+    width: 187px;
+    height: 43px;
+    margin-left: 10px;
+}
+.add a {
+    display: block;
+    width: 187px;
+    height: 25px;
+    padding: 9px 0;
+    text-align: center;
+    font: normal 18px/25px "Microsoft YaHei";
+    color: #fff;
+    background: #008842;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.add i {
+    width: 28px;
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: bottom;
+    background: url(http://static01.yiguo.com/www/images/product.png) no-repeat -47px 0;
+}
+.addcart .right {
+    float: right;
+    width: 120px;
+    padding-left: 10px;
+    color: #777;
+}
+.addcart .right th {
+    padding: 5px 0;
+    width: 65px;
+    font-weight: normal;
+    text-align: left;
+}
+.addcart .right td {
+    padding-left: 5px;
+}
+.details .ulist li{
+    float: left;
+    overflow: hidden;
+    height: 85px;
+    width: 85px;
+    border: 1px solid #bcbcbc;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.details .ulist .on{
+    border-color: #008842;
+    padding: 0;
+}

@@ -1,0 +1,338 @@
+/* 顶部导航 */
+.top-nav {
+    height: 30px;
+}
+
+.top-nav .fl li {
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.top-nav .city {
+    color: #008842;
+}
+
+.top-nav .city a {
+    color: #008842;
+}
+
+.top-nav .fr li {
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.login-reg {
+    float: right;
+    line-height: 30px;
+}
+
+/* toubu */
+.header {
+    height: 78px;
+    background: #e0e0e0;
+}
+
+.header .center {
+    height: 58px;
+    padding: 15px 0 5px 0;
+}
+
+.logo {
+    float: left;
+    width: 280px;
+    margin-right: 10px;
+}
+
+.header .search {
+    float: left;
+    width: 528px;
+    height: 58px;
+}
+
+.search .search-input {
+    float: left;
+    width: 425px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    border: 1px solid #008842;
+    background: #e0e0e0;
+}
+
+.search .search-btn {
+    float: left;
+    display: block;
+    width: 81px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    background: #008842;
+}
+
+.header .search .search-text {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.header .search ul li {
+    float: left;
+    margin-right: 5px;
+}
+
+.header .cartlist {
+    float: right;
+    position: relative;
+    width: 170px;
+    height: 28px;
+    padding: 6px 0;
+    line-height: 28px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #008842;
+    background: #fff;
+    cursor: pointer;
+}
+
+.header .cartlist a {
+    display: block;
+    color: #008842;
+    line-height: 28px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.banner {
+    height: 500px;
+    width: 100%;
+    background: url(http://img05.yiguoimg.com/d/others/190830/9288738997806878.jpg);
+    background-position: center !important;
+}
+
+/* 商品列表 */
+.title .title-top {
+    width: 180px;
+    height: 38px;
+    position: relative;
+    text-align: center;
+    background: #008842;
+}
+
+.title .title-top a {
+    overflow: hidden;
+    font: bold 15px/16px "Microsoft YaHei";
+    color: #fff;
+    display: block;
+    height: 16px;
+    padding: 11px 0;
+}
+
+.title .title-top a h1 {
+    font-size: 15px;
+}
+
+/* 列表内容 */
+.title .menu{
+    /* display: none; */
+    position: absolute;
+    height: 462px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* .title .title-main .item{
+
+} */
+.title .menu a {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 165px;
+    height: 24px;
+    padding: 9px 0 9px 15px;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.title .menu i {
+    display: inline-block;
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-right: 15px;
+    left: 26px;
+    top: 5;
+    background: url(http://static01.yiguo.com/www/images/header/nav-icon.png) no-repeat 0px 0px;
+    transition: all .3s ease-in;
+}
+.title .menu li:nth-child(2) i{
+    background-position: -96px 0;
+}
+.title .menu li:nth-child(3) i{
+    background-position: -120px 0;
+}
+.title .menu li:nth-child(4) i{
+    background-position: -144px 0;
+}
+.title .menu li:nth-child(5) i{
+    background-position: -168px 0;
+}
+.title .menu li:nth-child(6) i{
+    background-position: -192px 0;
+}
+.cartlist2 {
+    /* z-index: 3; */
+    /* display: none; */
+    /* position: absolute;
+    top: -38px;
+    left: 180px;
+    width: 215px;
+    height: 464px;
+    padding: 17px 20px;
+    border: 1px solid #bbb;
+    background: rgba(255, 255, 255, 0.9); */
+}
+
+.cartlist2 .item {
+    display: none;
+    position: absolute;
+    top: -38px;
+    left: 180px;
+    width: 215px;
+    height: 464px;
+    padding: 17px 20px;
+    border: 1px solid #bbb;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+/* 具体商品 louceng*/
+.floor {
+    clear: both;
+    position: relative;
+    margin-top: 18px;
+}
+
+.floor-top {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 5px;
+}
+
+.floor .floor-top h2 {
+    float: left;
+    height: 32px;
+    font: bold 18px "Microsoft YaHei";
+
+}
+
+.floor .floor-top i {
+    display: inline-block;
+    width: 31px;
+    height: 18px;
+    margin-right: 10px;
+    padding: 10px 7px 4px 7px;
+    color: #fff;
+    font: bold 14px "Microsoft YaHei";
+    vertical-align: text-bottom;
+    background: url(http://static01.yiguo.com/www/images/floor_tit_icon.png) no-repeat left top;
+}
+
+.floor .floor-top .keyword {
+    float: right;
+}
+
+.floor .floor-top .keyword a {
+    padding: 0 7px;
+}
+
+.floor .floor-top .keyword .last {
+    border-left: 1px solid #444;
+}
+
+.floor .floor-side {
+    float: left;
+    width: 275px;
+    height: 462px;
+}
+
+.floor .floor-main {
+    float: left;
+    width: 924px;
+    height: 462px;
+    position: relative;
+    border-top: 1px solid #d5d5d5;
+    border-left: 1px solid #d5d5d5;
+}
+
+.floor .floor-main ul li {
+    float: left;
+    overflow: hidden;
+    width: 230px;
+    height: 230px;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.floor .floor-main .wide {
+    width: 461px;
+}
+
+/* 第二种楼层布局 */
+.floor .floor-3 .floor-main {
+    width: 923px;
+    height: 461px;
+    border: 1px solid #d5d5d5;
+}
+
+.floor-3 .col1,
+.floor-3 .col2,
+.floor-3 .col3 {
+    float: left;
+    overflow: hidden;
+}
+
+.floor-3 .col1 {
+    width: 234px;
+    height: 383px;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.floor-3 .col2 {
+    width: 442px;
+}
+
+.floor .floor-3 .floor-main .narrow {
+    width: 220px;
+}
+
+.floor .floor-3 .floor-main li {
+    float: left;
+    overflow: hidden;
+    height: 191px;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    background: #fff;
+}
+
+.floor-3 .logo-list {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 654px;
+    height: 55px;
+    padding: 11px;
+    _padding: 10px 11px;
+    border-right: 1px solid #d5d5d5;
+    background: #fff;
+}

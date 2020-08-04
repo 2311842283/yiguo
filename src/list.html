@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/pagination.css">
+
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" currentmod="modlist">
+    </script>
+</head>
+
+<body>
+    <!-- //顶部导航 -->
+   <div class="top-nav">
+        <div class="center">
+            <ul class="fl">
+                <li>
+                    欢迎光临易果生鲜！
+                </li>
+                <!-- 送货城市 -->
+                <li class="city">
+                    <div class="city-sz">配送至：
+
+                    </div>
+                    <a class="city-name" href="">
+                        杭州市
+                        <s></s>
+                    </a>
+                </li>
+                <li>
+                    <img src="//img05.yiguoimg.com/d/web/190408/00592/145951/notice.png"
+                        style="vertical-align:middle;width:16px;height:16px;">
+                    <a href="javascript:;">网警提示</a>
+                </li>
+            </ul>
+
+            <ul class="fr">
+                <li class="myyiguo">
+                    <a href="javascript:;">
+                        <i></i>我的易果<s></s>
+                    </a>
+
+                    <div class="con">
+                        <a rel="nofollow" href="javascript:;">我的订单</a>
+                        <a rel="nofollow" href="javascript:;">我的优惠券<b id="coupon">0</b></a>
+                        <a rel="nofollow" href="javascript:;">我的收藏</a>
+                        <a rel="nofollow" href="javascript:;">我的悠币</a>
+                        <a rel="nofollow" href="javascript:;">我的退换货</a>
+                        <a rel="nofollow" href="javascript:;">预存款查询</a>
+                        <a rel="nofollow" href="javascript:;">立即充值</a>
+                        <a rel="nofollow" href="javascript:;" class="logout" style="display:none;">退出</a>
+
+                    </div>
+                </li>
+                <li class="phoneyg">
+                    <a href="#">
+                        <i></i>
+                        手机易果
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
+                        礼品卡绑定
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i></i>
+                        礼品兑换券入口
+                    </a>
+                </li>
+                <li>
+                    <img src="//img06.yiguoimg.com/d/web/181129/00341/103626/aptitudeicon.png"
+                        style="vertical-align:middle;">
+                    <a href="#">
+                        营业资质
+                    </a>
+                </li>
+                <li>
+                    <img src="//img06.yiguoimg.com/d/web/190328/00592/142712/招聘1.png" style="vertical-align:middle;">
+                    <a href="#">
+                        人才招聘
+                    </a>
+                </li>
+            </ul>
+            <!-- 登陆注册 -->
+            <ul class="login-reg">
+                <a href="login.html" class="login">[登陆]</a>
+                <a href="registry.html" class="registry">[注册]</a>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="center">
+            <div class="logo">
+                <a href="">
+                    <img src="http://static01.yiguo.com/www/images/header/logo.png" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" id="keyword" name="keyword" class="search-input" value="输入商品名／编号／拼音"
+                    style="color: rgb(153, 153, 153);">
+                <input class="search-btn" type="submit" value="搜索">
+                <ul class="search-text">
+                    <li><a href="">虾仁</a></li>
+                    <li><a href="">三文鱼</a></li>
+                    <li><a href="">兵冰鲜牛肉</a></li>
+                    <li><a href="">刺身</a></li>
+                    <li><a href="">新西兰鹿肉</a></li>
+                    <li><a href="">鳕鱼</a></li>
+                    <li><a href="">牛腱</a></li>
+                    <li><a href="">奇异果</a></li>
+                </ul>
+            </div>
+            <!-- 购物车 -->
+            <div class="cartlist">
+                <a href="cartlist.html">
+                    <span class="totleNum"><b></b></span>
+                    <b>0.0</b>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav">
+        <div class="center">
+            <!-- //商品列表 -->
+            <div class="title">
+                <div class="title-top">
+                    <a href="">
+                        <h1>全部商品分类▼</h1>
+                    </a>
+                </div>
+                <!-- <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">家用电器</a>
+                        </li>
+                        <li>
+                            <a href="#">手机</a><span>/</span><a href="#">运营商</a><span>/</span><a href="#">数码</a>
+                        </li>
+                        <li>
+                            <a href="#">电脑</a><span>/</span><a href="#">办公</a>
+                        </li>
+                        <li>
+                            <a href="#">家居</a><span>/</span><a href="#">家具</a><span>/</span><a href="#">家装</a><span>/</span><a
+                                href="#">厨具</a>
+                        </li>
+                        <li>
+                            <a href="#">男装</a><span>/</span><a href="#">女装</a><span>/</span><a href="#">童装</a><span>/</span><a
+                                href="#">内衣</a>
+                        </li>
+                        <li>
+                            <a href="#">美妆</a><span>/</span><a href="#">个护清洁</a><span>/</span><a href="#">宠物</a>
+                        </li>
+                        <li>
+                            <a href="#">女鞋</a><span>/</span><a href="#">箱包</a><span>/</span><a href="#">钟表</a><span>/</span><a
+                                href="#">珠宝</a>
+                        </li>
+                        <li>
+                            <a href="#">男鞋</a><span>/</span><a href="#">运动</a><span>/</span><a href="#">户外</a>
+                        </li>
+                      
+                    </ul>
+                    <div class="cartlist2">
+                        <div class="item"><a href="list.html">模拟跳转商品列表页</a></div>
+                        <div class="item">第二块内容</div>
+                        <div class="item">第三块内容</div>
+                        <div class="item">第四块内容</div>
+                        <div class="item">第五块内容</div>
+                        <div class="item">第六块内容</div>
+                     
+                    </div>
+                </div> -->
+<!-- 
+                <div class="title-main">
+                    <div class="item">
+                        <a href="">
+                            <i></i>
+                            新鲜水果
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+            <!-- //分类 -->
+            <div class="sort">
+                <ul>
+                    <li>
+                        <a href="">
+                            新品专区
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            优质生活
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            银行专区
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            菜谱专栏
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 所有分类  筛选-->
+
+    <div class="select">
+        <div class="center">
+            <div class="all clearfix">
+                <div class="tit">►所有分类</div>
+                <ul>
+                    <li class=" "><a href="">车厘子/樱桃</a></li>
+                    <li class=" "><a href="">苹果</a></li>
+                    <li class=" "><a href="">柑桔橙柚</a></li>
+                    <li class=" "><a href="">蓝莓/莓类</a></li>
+                    <li class=" "><a href="">奇异果/猕猴桃</a></li>
+                    <li class=" "><a href="">梨</a></li>
+                    <li class=" "><a href="">葡萄/提子</a></li>
+                    <li class=" "><a href="">牛油果</a></li>
+                    <li class=" "><a href="">热带水果</a></li>
+                    <li class=" "><a href="">凤梨/菠萝</a></li>
+                    <li class=" "><a href="">芒果</a></li>
+                    <li class=" "><a href="">柠檬</a></li>
+                    <li class=" "><a href="">火龙果</a></li>
+                    <li class=" "><a href="">瓜类</a></li>
+                    <li class=" "><a href="">时令水果</a></li>
+                    <li class=" "><a href="">桃李杏梅</a></li>
+                    <li class=" "><a href="">椰子/椰青</a></li>
+                    <li class=" last"><a href="">原箱水果</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- //排序 -->
+    <div id="formCx" class="sort2 clearfix center">
+        <a class="on" href="javascript:;" _sort="0">默认排序</a>
+        <a class="" href="javascript:;" _sort="1">销量<i class="dowm"></i></a>
+
+        <a class="price" href="javascript:;" _sort="3">价格<i class="sort_down"></i></a>
+        <a class="" href="javascript:;" _sort="5">评论<i class="dowm"></i></a>
+    </div>
+    <!-- 商品列表 -->
+    <div class="goodslist center">
+        <!-- <ul>
+            <li class="item" sid="">
+                <div class="p_img clearfix">
+                    <a href="" target="_blank">
+                        <img src="http://img12.yiguoimg.com/d/items/2020/200507/9288740336052391_300.jpg">
+                    </a>
+                </div>
+                <p>
+                    <a href="" target="_blank">网易味央黑猪去骨蹄髈500g</a>
+                </p>
+                <span class="price">
+                    <strong>¥69.00</strong>
+                </span>
+            </li> -->
+        <!-- <div class="p-buy">
+                    <span>香糯厚实 肥而不腻 软糯粘唇</span>
+
+                                <a class="btn-buy" href="javascript:;" onclick="G.app.cart.module.addToCart(this,'6000040141',1,app.referCart);">加入购物车</a>
+                </div> -->
+
+        <!-- </ul> -->
+    </div>
+    <!-- 分页的结构：css自由设计 -->
+    <div class="pagelist">
+        <div class="m-style page">
+        </div>
+    </div>
+    <!-- 尾部服务 footer-service -->
+    <div class="footer_service">
+        <div class="center">
+            <ul>
+                <li class="s1">
+                    <b>全球精选</b>
+                    <span>一站式生鲜购物方案</span>
+                </li>
+                <li class="s2">
+                    <b>多仓直发</b>
+                    <span>次日达配送服务</span>
+                </li>
+                <li class="s3">
+                    <b>品质严选</b>
+                    <span>精选正宗品质好食材</span>
+                </li>
+                <li class="s4">
+                    <b>天天低价</b>
+                    <span>会员专属优惠购不停</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="wrap center">
+            <dl class="col1">
+                <dt>新手指南</dt>
+                <dd>
+                    <p><a href="/help/registersteps.html">账户注册</a></p>
+                    <p><a href="/help/gouwuliucheng.html">购物流程</a></p>
+                    <p><a href="/help/ordering.html">订购方式</a></p>
+                    <p><a href="/help/ubremark.html">悠币说明</a></p>
+
+                    <p><a href="http://www.yiguo.com/activity/sale/2999">会员等级<i class="ml5" style="display: none;"><img
+                                    src="http://img06.yiguoimg.com/e/web/170315/00941/154425/icon-new.png"></i></a></p>
+
+
+                </dd>
+            </dl>
+            <dl class="col2">
+                <dt>付款方式</dt>
+                <dd>
+                    <p><a href="/help/payment.html">支付方式</a>/<a href="/help/invoiceremark.html">发票说明</a></p>
+                    <p><a href="/help/usechuzhika.html">礼品卡章程</a></p>
+                    <p><a href="/help/usegiftcard.html">优惠代码</a></p>
+                    <p><a href="/help/cardbuynotes.html">卡券购买章程</a></p>
+                </dd>
+            </dl>
+            <dl class="col3">
+                <dt>配送方式</dt>
+                <dd>
+                    <p><a href="/help/sendyuefei.html">配送运费</a></p>
+                    <p><a href="/help/sendquyu.html"></a></p>
+                    <p><a href="/help/sendtime.html">时间及范围</a></p>
+                </dd>
+            </dl>
+            <dl class="col4">
+                <dt>售后服务</dt>
+                <dd>
+                    <p><a href="/help/tuihuanhuoshuoming.html">退换货政策</a></p>
+                    <p><a href="/help/huanhuolc.html">退换货流程</a></p>
+                    <p><a href="/help/qa.html">常见问题</a></p>
+                    <p><a href="/help/quicknessrefund.html">极速退款</a></p>
+                    <p>
+                    </p>
+                    <p><a href="http://home.yiguo.com/Trade/Advice">投诉与建议</a></p>
+                </dd>
+            </dl>
+            <dl class="col5">
+                <dt>关于我们</dt>
+                <dd>
+                    <p><a href="/help/introduction.html">公司介绍</a></p>
+                    <p><a href="/help/contact.html">联系我们</a></p>
+                    <p><a href="/help/procooperation.html">业务合作</a></p>
+                    <p><a href="/help/chengxinjubao.html">诚信举报</a></p>
+                    <p> <a href="/help/RegisterAgreement.html"> 用户协议</a> </p>
+                    <p><a href="/help/PrivacyAgreement.html">隐私协议</a></p>
+
+                    <p><a href="/help/friendurl.html">友情链接</a></p>
+
+                </dd>
+            </dl>
+            <div class="service">
+                <span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span>
+                <span>周一至周日 9:00-21:00</span>
+            </div>
+            <div class="copyright">
+                <p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+                <p> <a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow">沪ICP备09008015号</a> Copyright ©
+                    2005-2020 <a href="http://www.yiguo.com/"> </a>版权所有</p>
+                <p class="authentication">
+                    <a href="http://scjgj.sh.gov.cn/platform/survey/step1_phone" target="_blank" rel="nofollow"><img
+                            style="height: 47px;"
+                            src="http://img05.yiguoimg.com/d/web/190617/00191/142933/ordermeal.png"></a>
+                    <a href="http://www.shjbzx.cn/" target="_blank" rel="nofollow"><img style="height: 47px;"
+                            src="http://img06.yiguoimg.com/d/web/190527/00191/172725/report.png"></a>
+                    <a href="https://www.12377.cn/" target="_blank" rel="nofollow"><img style="height: 47px;"
+                            src="https://img06.yiguoimg.com/d/web/200513/00901/145009/wxb.png"></a>
+                    <a href="http://www.yiguo.com/legal" target="_blank" rel="nofollow"><img
+                            src="http://img07.yiguoimg.com/d/web/171208/00652/173249/153685368061665897_121x29.png"></a>
+                    <a href="javascript:;" rel="nofollow"><img
+                            src="https://img05.yiguoimg.com/d/web/190618/00191/143543/962110.png" height="47"></a>
+                    <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20110512114405424"
+                        target="_blank"><img src="//img06.yiguoimg.com/d/web/181227/00281/143951/footer_copy.jpg"
+                            height="47px"></a>
+                    <a target="_blank"
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502000002"
+                        style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px;"><img
+                            src="http://www.beian.gov.cn/file/ghs.png" style="float: left;"><span
+                            style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393;">沪公网安备
+                            31010502000002号</span></a>
+                </p>
+                <p>违法和不良信息举报电话 400-000-7788</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

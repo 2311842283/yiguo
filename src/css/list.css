@@ -1,0 +1,287 @@
+
+/* 商品列表 */
+.title .title-top {
+    width: 180px;
+    height: 38px;
+    position: relative;
+    text-align: center;
+    background: #008842;
+}
+
+.title .title-top a {
+    overflow: hidden;
+    color: #fff;
+    display: block;
+    height: 16px;
+    padding: 11px 0;
+}
+
+.title .title-top a h1 {
+    font-size: 15px;
+}
+
+/* 列表内容 */
+.header-nav .title {
+    float: left;
+}
+
+.title .title-main {
+    display: none;
+    position: absolute;
+    height: 462px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* .title .title-main .item{
+} */
+.title .title-main .item a {
+    /* overflow: hidden; */
+    position: relative;
+    display: block;
+    width: 165px;
+    height: 24px;
+    padding: 9px 0 9px 15px;
+    font-size: 14px;
+}
+
+.title .title-main .item i {
+    /* overflow: hidden; */
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    background: url(http://static01.yiguo.com/www/images/header/nav-icon.png);
+    background-position: -48px 0;
+}
+
+/* 分类 */
+.header-nav .sort {
+    overflow: hidden;
+    float: left;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+
+
+}
+
+.header-nav .sort ul li {
+    float: left;
+    width: 115px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* 筛选 */
+.select {
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.select .all {
+    position: relative;
+    background: #eaeaea;
+    border: 1px solid #c7c7c7;
+    border-right-color: #e5e5e5;
+}
+
+.select .tit {
+    float: left;
+    width: 78px;
+    padding: 5px 0 5px 20px;
+    color: #909090;
+}
+
+.select .all ul {
+    background: #f1f1f1;
+    float: left;
+    position: relative;
+    width: 1100px;
+    padding: 5px 0;
+    zoom: 1;
+}
+
+.select li {
+    float: left;
+    display: inline;
+}
+
+.select a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #777;
+}
+
+/* 排序 */
+.sort2 {
+    padding: 5px 10px;
+    width: 1180px;
+    background: #eaeaea;
+}
+
+.sort2 a {
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-left: -1px;
+    padding: 5px 10px;
+    border: 1px solid #c7c7c7;
+    background: #fff;
+}
+
+.sort2 a i {
+    width: 10px;
+    height: 16px;
+    margin-left: 3px;
+    background: url(http://static01.yiguo.com/www/images/filter_icon.png) no-repeat 0 0;
+}
+
+.sort2 .price i {
+    background-position: -20px 0;
+}
+
+.sort2 a:hover {
+    background: #eee;
+}
+
+.sort2 a:hover i {
+    background-position: -10px 0;
+}
+
+.sort2 .price:hover i {
+    background-position: -20px 0;
+}
+
+.sort2 .price:hover i.sort_down,
+.sort2 .price.on i.sort_down {
+    background-position: -30px 0;
+}
+
+/* 商品列表 */
+.goodslist ul {
+    overflow: hidden;
+    zoom: 1;
+    margin-left: -13px;
+    _margin-left: -28px;
+}
+
+.goodslist .item {
+    float: left;
+    position: relative;
+    width: 290px;
+    margin: 15px 0 0 13px;
+    background: #fff;
+}
+
+.goodslist .item img {
+    position: relative;
+    width: 290px;
+    height: 290px;
+}
+
+.goodslist .item p{
+    padding: 10px;
+    height: 48px;
+}
+
+.goodslist .item p{
+    height: 16px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.goodslist .item p a:hover {
+    color: #008842;
+    text-decoration: underline;
+}
+
+.goodslist .item .price {
+    height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.goodslist .item .price {
+    font-size: 18px;
+    color: #e7380d;
+    vertical-align: middle;
+}
+
+.product_item .p_price del {
+    font-size: 12px;
+    color: #777;
+    padding: 0 10px;
+}
+
+.product_item .p_price .saletip {
+    margin-left: 10px;
+    color: #e8340c;
+}
+
+.product_item .p_price .saletip b {
+    padding: 3px 5px;
+    margin-right: 5px;
+    font-weight: normal;
+    color: #fff;
+    background: #e8340c;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.product_item .tag {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 46px;
+    height: 46px;
+}
+
+/* .product_item .p-buy {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 68px;
+    width: 270px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    background: #fff \9;
+}
+
+.product_item .p-buy span {
+    display: block;
+    width: 270px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.product_item .btn-buy {
+    display: block;
+    width: 180px;
+    height: 25px;
+    margin: 0 auto;
+    line-height: 25px;
+    color: #fff;
+    background: #008742;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.product_item .btn-buy:hover {
+    color: #fff;
+    background: #09964e;
+}
+
+.goods_list .current .p-buy {
+    display: block;
+} */

@@ -1,0 +1,386 @@
+@charset "utf-8";
+/* CSS Document */
+/* css重置 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, p { margin: 0; padding: 0 }
+body { color: #444; background: #fff; word-break: break-all; word-wrap: break-word; }
+body, input, textarea { font-size: 12px; font-family:Arial,Verdana,"\5b8b\4f53";}
+input, button, select, textarea { outline: none;}
+input{ vertical-align:middle; }
+textarea { resize: none; }
+li { list-style: none; }
+img { border: none; }
+table{ border-collapse:collapse; border-spacing:0; }
+h1,h2,h3,h4,h5,h6{ font-size:12px; }
+ul,ol,dl,dt,dd{ list-style-type:none; }
+a { color: #444; text-decoration: none; outline: none; }
+a:hover { color: #008842; }
+i,s{ display:inline-block; vertical-align:middle;}
+/*clearfix 清除浮动*/
+.clearfix { *zoom:1; }
+.clearfix:after, .center:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+.clear {clear: both; }
+
+/*公用*/
+body{ background:#f7f8f8}
+.w{ background:#f7f8f8}
+.center{ width: 1200px; margin: 0 auto }
+.w1200{ width:1200px !important}
+.block{ display:block !important;}
+.none{ display:none;}
+.fl{ float:left;}
+.fr{ float:right;}
+.textcenter{text-align:center;}
+.textright{text-align:right;}
+.textleft{text-align:left;}
+
+
+/* 头部 */
+/* 顶部导航 */
+.top-nav {
+    height: 30px;
+}
+
+.top-nav .fl li {
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.top-nav .city {
+    color: #008842;
+}
+
+.top-nav .city a {
+    color: #008842;
+}
+.city-sz {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.city .city-name{
+    position: relative;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 0 20px 5px 5px;
+}
+.city .city-name s{
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    width: 8px;
+    height: 4px;
+    margin-left: 5px;
+    background: url(http://static01.yiguo.com/www/images/header/header-img.png) no-repeat 0 0;
+    transition: transform .2s ease-in 0s;
+    -webkit-transition: -webkit-transform .2s ease-in 0s;
+}
+
+
+.top-nav .fr li {
+    float: left;
+    position: relative;
+    line-height: 30px;
+    padding: 0 15px;
+    text-align: center;
+
+    
+}
+.top-nav .fr li a{
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    /* padding: 0 10px 0 10px; */
+    /* cursor: pointer; */
+    border-width: 0 1px;
+    position: relative;
+}
+.top-nav .fr li img{
+    float: left;
+    position: absolute;
+    top: 6px;
+    left: -7px;
+}
+.fr li a i{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: url(http://static01.yiguo.com/www/images/header/header-img.png) no-repeat left top;
+}
+.fr .myyiguo i{
+    background-position: -40px 0;
+}
+/* 我的易果二级菜单 */
+.con{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #b4c1a3;
+    background: #fff;
+    z-index: 5;
+    width: 100px;
+    padding: 5px 12px;
+    text-align: left;
+}
+.myyiguo:hover .con{
+    display: block;
+}
+.fr li:nth-child(2) a i{
+    background-position: -64px 0;
+}
+.fr li:nth-child(3) a i{
+    background-position: -88px 0;
+}
+.fr li:nth-child(4) a i{
+    background-position: -64px 0;
+}
+.login-reg {
+    float: right;
+    line-height: 30px;
+}
+
+/* toubu */
+.header {
+    height: 78px;
+    background: #e0e0e0;
+}
+
+.header .center {
+    height: 58px;
+    padding: 15px 0 5px 0;
+}
+
+.logo {
+    float: left;
+    width: 280px;
+    margin-right: 10px;
+}
+
+.header .search {
+    float: left;
+    width: 528px;
+    height: 58px;
+}
+
+.search .search-input {
+    float: left;
+    width: 425px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    border: 1px solid #008842;
+    background: #e0e0e0;
+}
+
+.search .search-btn {
+    float: left;
+    display: block;
+    width: 81px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    background: #008842;
+}
+
+.header .search .search-text {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.header .search ul li {
+    float: left;
+    margin-right: 5px;
+}
+
+.header .cartlist {
+    float: right;
+    position: relative;
+    width: 170px;
+    height: 28px;
+    padding: 6px 0;
+    line-height: 28px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #008842;
+    background: #fff;
+    cursor: pointer;
+}
+.header .cartlist .totleNum{
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 0;
+    background: url(http://static01.yiguo.com/www/images/header/header-img.png) no-repeat -112px 0;
+}
+.header .cartlist a {
+    display: block;
+    color: #008842;
+    line-height: 28px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+/* <!-- 尾部服务 footer-service --> */
+
+.footer_service {
+    background: #e0e0e0;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.footer_service li {
+    float: left;
+    width: 190px;
+    height: 42px;
+    margin-left: 55px;
+    padding-left: 55px;
+    background: url(http://static01.yiguo.com/www/images/footer_service_icon.png) no-repeat left top;
+}
+
+.footer_service .s1 {
+    background-position: 0 0;
+}
+
+.footer_service .s2 {
+    background-position: 0 -42px;
+}
+
+.footer_service .s3 {
+    background-position: 0 -84px;
+}
+
+.footer_service .s4 {
+    background-position: 0 -126px;
+}
+
+.footer_service li b {
+    display: block;
+    padding-left: 15px;
+    color: #007f4d;
+    font: normal 18px/25px "Microsoft YaHei";
+    border-left: 1px solid #a6a6a6;
+}
+
+.footer_service li span {
+    display: block;
+    padding-left: 15px;
+    border-left: 1px solid #a6a6a6
+}
+
+.footer {
+    zoom: 1;
+    clear: both;
+    position: relative;
+    padding-bottom: 20px;
+    border-top: 1px solid #e0e0e0
+}
+
+.footer .wrap {
+    margin: 50px auto 0;
+}
+
+.footer dl {
+    width: 190px;
+    float: left;
+    margin-left: 50px;
+    display: inline;
+}
+
+.footer dl dt {
+    height: 23px;
+    line-height: 23px;
+    background: url(../images/footer_icon.png) no-repeat;
+    font-size: 14px;
+    text-indent: 40px;
+}
+
+.footer .col1 dt {
+    background-position: 0 0;
+}
+
+.footer .col2 dt {
+    background-position: 0 -23px;
+}
+
+.footer .col3 dt {
+    background-position: 0 -46px;
+}
+
+.footer .col4 dt {
+    background-position: 0 -69px;
+}
+
+.footer .col5 dt {
+    background-position: 0 -92px;
+}
+
+.footer dl dd {
+    border-left: 1px dashed #A8A8A8;
+    padding-left: 20px;
+    height: 110px;
+    min-height: 110px;
+    margin: 15px 0 0 13px;
+}
+
+.footer dl dd a {
+    color: #575556;
+    line-height: 22px;
+}
+
+.footer dl dd a:hover {
+    text-decoration: underline;
+    color: #008842;
+}
+
+.footer .service {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+
+.footer .service span {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer .copyright {
+    clear: both;
+    color: #717171;
+    text-align: center;
+    line-height: 22px;
+}
+
+.footer .copyright a {
+    color: #717171;
+}
+
+.footer .copyright a:hover {
+    color: #008842;
+}
+
+.footer .authentication a {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    zoom: 1;
+    vertical-align: middle
+}

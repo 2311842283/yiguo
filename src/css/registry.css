@@ -1,0 +1,132 @@
+.header p {
+    color: #008842;
+    left: 240px;
+    font: 28px/1 Microsoft YaHei;
+    position: absolute;
+    left: 313px;
+    top: 23px;
+    white-space: nowrap;
+}
+
+/* 表单注册 */
+.register {
+    margin-top: 30px;
+    padding: 40px 0 50px;
+    border: 1px solid #a5c9b6;
+    border-top: 0;
+    background-color: #fff;
+position: relative;
+}
+.register .regtop{
+    position: absolute;
+    top: 17px;
+    right: 0;
+    font: 14px/1 "Microsoft YaHei";
+}
+.register .regtop a {
+    margin-right: 36px;
+    text-decoration: underline;
+    color: #ef760a;
+}
+.register p {
+    margin-bottom: 29px;
+    font: 14px Arial, "Microsoft YaHei";
+}
+
+.register label {
+    display: inline-block;
+    width: 220px;
+    padding-right: 20px;
+    text-align: right;
+    *display: inline;
+    *zoom: 1;
+}
+
+.register .input {
+    margin-right: 20px;
+}
+
+.register .yzm {
+    width: 100px;
+    display: inline-block;
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    height: 38px;
+    margin-left: 20px;
+}
+
+.register .imgcode {
+    width: 147px;
+}
+
+.register input {
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    height: 38px;
+    vertical-align: middle;
+    padding-left: 14px;
+    width: 290px;
+    font: 14px/38px "Microsoft YaHei";
+}
+
+.phone,
+.password,
+.repass,
+.code3 {
+    background-image: url(https://login.yiguo.com/Content/img/bg_input.png);
+    background-repeat: no-repeat;
+}
+
+.phone {
+    background-position: 276px -30px;
+}
+
+.password,
+.repass,
+.code3 {
+    background-position: 276px -70px;
+}
+
+input[type=checkbox] {
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+    vertical-align: -1px;
+}
+
+.btn-yzm {
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #f7f7f7;
+    border: 1px solid #c1c1c1;
+    color: #64b22a;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+.register .phone-code {
+    width: 147px;
+}
+
+.register .btn-reg {
+    margin-left: 244px;
+    background: #008842;
+    width: 306px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.register .fr {
+    width: 330px;
+    height: 340px;
+    padding-top: 50px;
+    font: 14px/56px "Microsoft YaHei";
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
