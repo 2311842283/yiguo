@@ -32,6 +32,16 @@
 .header {
     height: 78px;
     background: #e0e0e0;
+ 
+}
+
+.headerfix {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    height: 78px;
+    background: #e0e0e0;
+    width: 100%;
 }
 
 .header .center {
@@ -138,7 +148,7 @@
 }
 
 /* 列表内容 */
-.title .menu{
+.title .menu {
     /* display: none; */
     position: absolute;
     height: 462px;
@@ -157,7 +167,19 @@
     padding: 9px 0 9px 15px;
     font-size: 14px;
     text-align: center;
-    
+
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li span {
+    float: right;
+    position: absolute;
+    top: 8px;
+    right: 19px;
+    display: none;
 }
 
 .title .menu i {
@@ -172,24 +194,30 @@
     background: url(http://static01.yiguo.com/www/images/header/nav-icon.png) no-repeat 0px 0px;
     transition: all .3s ease-in;
 }
-.title .menu li:nth-child(2) i{
+
+.title .menu li:nth-child(2) i {
     background-position: -96px 0;
 }
-.title .menu li:nth-child(3) i{
+
+.title .menu li:nth-child(3) i {
     background-position: -120px 0;
 }
-.title .menu li:nth-child(4) i{
+
+.title .menu li:nth-child(4) i {
     background-position: -144px 0;
 }
-.title .menu li:nth-child(5) i{
+
+.title .menu li:nth-child(5) i {
     background-position: -168px 0;
 }
-.title .menu li:nth-child(6) i{
+
+.title .menu li:nth-child(6) i {
     background-position: -192px 0;
 }
+
 .cartlist2 {
     /* z-index: 3; */
-    /* display: none; */
+    display: none;
     /* position: absolute;
     top: -38px;
     left: 180px;

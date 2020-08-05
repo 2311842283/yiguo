@@ -7,7 +7,8 @@
     <title>商品列表</title>
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/details.css">
-
+    <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage" currentmod="details">
+    </script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                         <i></i>我的易果<s></s>
                     </a>
 
-                    <!-- <div class="con">
+                    <div class="con">
                         <a rel="nofollow" href="http://home.yiguo.com/Trade/OrderList">我的订单</a>
                         <a rel="nofollow" href="http://home.yiguo.com/Trade/MyCoupons">我的优惠券<b id="coupon">0</b></a>
                         <a rel="nofollow" href="http://home.yiguo.com/Trade/MyCollection">我的收藏</a>
@@ -50,8 +51,7 @@
                         <a rel="nofollow" href="http://home.yiguo.com/Account/Balance">预存款查询</a>
                         <a rel="nofollow" href="http://event.yiguo.com/activity/">立即充值</a>
                         <a rel="nofollow" href="javascript:;" class="logout" style="display:none;">退出</a>
-                        
-                    </div> -->
+                    </div>
                 </li>
                 <li class="phoneyg">
                     <a href="#">
@@ -117,10 +117,8 @@
             </div>
             <!-- 购物车 -->
             <div class="cartlist">
-                <a href="">
-                    <span>
-                        <img src="" alt="">
-                        0</span>
+                <a href="cartlist.html" target="blank">
+                    <span class="totleNum"><b></b></span>
                     <b>0.0</b>
                 </a>
             </div>
@@ -176,14 +174,14 @@
     <div class="details center">
         <!-- 面包屑导航 -->
         <div class="crumbs">
-            <a class="ml0" href="/">首页</a>
+            <a class="ml0" href="index1.html" target="blank">首页</a>
             &gt;
-            <a href="">新鲜水果</a>&gt; <a href="">苹果</a>
-            &gt; 【官网】陕西红富士苹果9个约200g/个
+            <a href="list.html" target="blank">新鲜水果</a>&gt;
+            <span></span>
         </div>
         <!-- /* 小图区域 */ -->
         <div id="spic" class="spic">
-            <img src="http://img09.yiguoimg.com/d/items/2020/200113/9288739899320365_500.jpg" alt="" id="smallpic">
+            <img src="" alt="" id="smallpic">
             <div id="sf" style="visibility: hidden; width: 200px; height: 250px; left: 165px; top: 150px;"></div>
         </div>
         <!-- 大图 -->
@@ -194,8 +192,8 @@
         <!-- 商品信息 -->
         <div class="product-info">
             <div class="summary-name">
-                <h1>【官网】陕西红富士苹果9个约200g/个</h1>
-                <p>脆甜爽口 咔嚓一口好香甜</p>
+                <h1></h1>
+                <p></p>
             </div>
             <div class="summary-price clearfix">
                 <div class="pro-price">
@@ -232,8 +230,8 @@
                         <ul>
                             <li class="selected">
                                 <a href="">
-                                    <span>￥23.00</span>
-                                    <span>4个/箱</span>
+                                    <span></span>
+                                    <span></span>
                                     <i></i>
                                 </a>
                             </li>
@@ -256,21 +254,36 @@
             <div class="right">
                 <table width="100%" class="zx">
                     <tbody>
-                            <tr><th>原产地：</th><td>山东</td></tr>
-                        <tr><th>商品编号：</th><td>6000040848</td></tr>
-                            <tr><th>品牌：</th><td>易果</td></tr>
-                        <tr><th>发货地：</th><td>上海宝山</td></tr>
-                        
+                        <tr>
+                            <th>原产地：</th>
+                            <td>山东</td>
+                        </tr>
+                        <tr>
+                            <th>商品编号：</th>
+                            <td>6000040848</td>
+                        </tr>
+                        <tr>
+                            <th>品牌：</th>
+                            <td>易果</td>
+                        </tr>
+                        <tr>
+                            <th>发货地：</th>
+                            <td>上海宝山</td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
         </div>
         <div class="ulist clearfix">
-            <ul>
-                <li class="on"><img width="85" height="85" src="http://img10.yiguoimg.com/d/items/2020/200605/9288740487014597_500.jpg"></li>
-                <li class=""><img width="85" height="85" src="http://img09.yiguoimg.com/d/items/2020/200605/9288740486916293_500.jpg"></li>
-                <li class=""><img width="85" height="85" src="http://img12.yiguoimg.com/d/items/2020/200605/9288740486981829_500.jpg"></li>
-                                </ul>
+            <!-- <ul class="clearfix">
+                <li class="on"><img width="85" height="85"
+                        src="http://img10.yiguoimg.com/d/items/2020/200605/9288740487014597_500.jpg"></li>
+                <li class=""><img width="85" height="85"
+                        src="http://img09.yiguoimg.com/d/items/2020/200605/9288740486916293_500.jpg"></li>
+                <li class=""><img width="85" height="85"
+                        src="http://img12.yiguoimg.com/d/items/2020/200605/9288740486981829_500.jpg"></li>
+            </ul> -->
         </div>
     </div>
 
