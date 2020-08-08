@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品列表</title>
+    <title>购物车</title>
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/cartlist.css">
     <script src="script/require.js" defer async="true" data-main="script/main.js" id="currentpage"
@@ -147,24 +147,27 @@
                     <table class="cart-table">
                         <tbody>
                             <!-- <tr>
+                      <tr>
                         <td class="cart-t-check"> 
-                            <input type="checkbox" checked="checked">
+                            <input type="checkbox" class="asdasd">
                         </td>
-                        <td class="cartimg"><img src="http://img10.yiguoimg.com/d/items/2018/180807/9288727884113159_300.jpg" alt=""></td>
-                        <td class="cart-t-info">原膳澳洲和牛眼肉牛排(M4-5)180g</td>
+                        <td class="cartimg"><img src="${value.url}" alt=""></td>
+                        <td class="cart-t-info">${value.title}</td>
                         <td class="cart-t-ub"></td>
-                        <td class="cart-t-price">￥159.00</td>
+                        <td class="cart-t-price">￥<span>${value.price}</span></td>
                         <td  class="cart-t-num">
-                            <a href="" class="decrement"></a>
-                            <input type="text" value="1" class="num-inp">
-                            <a href="" class="increment"></a>
+                            <a href="javascript:;" class="decrement"></a>
+                            <input type="text" value="${num}" class="num-inp">
+                            <a href="javascript:;" class="increment"></a>
                         </td>
-                        <td  class="cart-t-total">￥159.00</td>
-                        <td  class="cart-t-spec">180g/包</td>
+                        <td  class="cart-t-total">￥<span>${(value.price*num).toFixed(2)}</span></td>
+                        <td  class="cart-t-spec">${value.weight}</td>
                         <td  class="cart-t-opera">
-                            <a href="">移入收藏</a>
-                            <a href="">删除</a>
+                            <a href="javascript:;">移入收藏</a>
+                            <a href="javascript:;" class="deleteshop">删除</a>
                         </td>
+                      
+                      
                         </tr> -->
 
                         </tbody>

@@ -57,11 +57,7 @@ define([], function () {
         //顶部固定
         top: function () {
             const $header = $('.header');
-            // console.log( $header.scrollTop());
-            // console.log( $(window).scrollTop());
             $(window).on('scroll', function () {
-                // console.log( $(window).scrollTop());
-                // $header.addClass('headerfix')
                 if ($(window).scrollTop() >= 30) {
                     $header.addClass('headerfix')
                     $header.stop(true).animate({
@@ -76,15 +72,41 @@ define([], function () {
             })
         },
         // 图片移入偏移效果
-        // imgpy: function () {
-        //     //页面主体里除了左侧所有图片
-        //     const $imgs = $('.floor-main img');
-        //     // console.log($imgs.length);
-        //     $imgs.on('mouseover', function () {
-        //         console.log($imgs.eq($(this).index()));
-        //     //    $imgs.eq($(this).index())
-        //     })
-        // }
-        
+        imgpy: function () {
+            //页面主体里除了左侧所有图片
+            const $imgs = $('.floor-main');
+            $imgs.on('mouseover', 'img', function () {
+                // console.log($(this), $(this).index());
+                $(this).stop().animate({
+                    left: '+10px'
+                }, 300);
+            })
+            $imgs.on('mouseout', 'img', function () {
+                $(this).stop().animate({
+                    left: '0px'
+                }, 300);
+            })
+        },
+        // 返回顶部
+        goTop: function () {
+            //滚动条大于一定高度显示返回顶部
+            $(window).on('scroll', function () {
+                // console.log($(window).scrollTop());
+                if ($(window).scrollTop() >= 1000) {
+                    $('.goTop').css('display','block')
+                }else{
+                    $('.goTop').css('display','none')
+                }
+            })
+           //点击返回顶部
+            $('.goTop').on('click', function () {
+                // console.log(11);
+                $('html,body').animate({
+                    scrollTop:0
+                })
+            })
+          
+        }
+
     }
 })

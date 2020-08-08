@@ -6,6 +6,7 @@
     top: 23px;
     white-space: nowrap;
 }
+
 .login {
     width: 308px;
     padding: 30px 20px 20px;
@@ -104,21 +105,35 @@ input[type=checkbox] {
 
 .threelogin i {
     background-image: url(https://login.yiguo.com/Content/img/themes/bg_login.png);
-    display:inline-block;
+    display: inline-block;
     width: 80px;
     height: 20px;
-margin-right: 25px;
+    margin-right: 25px;
 }
 
 .qq i {
     background-position: -60px -200px;
 }
 
-.sina i{
+.sina i {
     background-position: -160px -200px;
 }
+
 .ay i {
     background-position: -260px -200px;
     width: 57px;
     margin-right: 0;
 }
+
+/* //获取验证码 */
+.yzm {
+    width: 100px;
+    display: inline-block;
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    line-height: 38px;
+    text-align: center;
+    height: 38px;
+    margin-left: 2px;
+}
+

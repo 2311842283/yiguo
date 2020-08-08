@@ -109,7 +109,7 @@ define([], function () {
                 }
                 console.log(arrsid, arrnum);
 
-                alert('按钮被触发了');
+                alert('已成功加入购物车');
             });
         }
     }

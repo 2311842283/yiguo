@@ -1,3 +1,29 @@
+/* //返回顶部 */
+.sidebar {
+    display: block;
+    z-index: 100;
+    position: fixed;
+    bottom: 20px;
+    right: 47%;
+    margin-right: -625px;
+    width: 56px;
+}
+
+.sidebar .s-btn {
+    overflow: hidden;
+    display: block;
+    width: 50px;
+    height: 42px;
+    margin-bottom: 10px;
+    background: url(http://static01.yiguo.com/www/images/sidebar.png) no-repeat left top;
+}
+.sidebar .goTop {
+    display: none;
+    background-position: 0 0;
+}
+.sidebar .service {
+    background-position: 0 -46px;
+}
 /* 顶部导航 */
 .top-nav {
     height: 30px;
@@ -300,12 +326,16 @@
     border-top: 1px solid #d5d5d5;
     border-left: 1px solid #d5d5d5;
 }
-
+.floor .floor-main img{
+    position: absolute;
+    left: 0;
+}
 .floor .floor-main ul li {
     float: left;
     overflow: hidden;
     width: 230px;
     height: 230px;
+    position: relative;
     border-right: 1px solid #d5d5d5;
     border-bottom: 1px solid #d5d5d5;
 }
@@ -326,8 +356,12 @@
 .floor-3 .col3 {
     float: left;
     overflow: hidden;
+    position: relative;
 }
-
+.floor-3 .col3 {
+    width: 246px;
+    height: 461px;
+}
 .floor-3 .col1 {
     width: 234px;
     height: 383px;

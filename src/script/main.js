@@ -30,7 +30,8 @@ require(['jquery', 'lazyload', 'jquery.pagination', 'cookie'], function ($) {
         require([mod], function (data) {
             data.menu();
             data.top();
-            // data.imgpy();
+            data.imgpy();
+            data.goTop();
         });
     } else if (mod === 'details') {
         require([mod], function (data) {
@@ -41,6 +42,7 @@ require(['jquery', 'lazyload', 'jquery.pagination', 'cookie'], function ($) {
     } else if (mod === 'cartlist') {
         require([mod], function (data) {
             data.render();
+            data.remove();
             // data.checkall();
         });
     }else if (mod === 'registry') {
